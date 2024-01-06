@@ -1,23 +1,9 @@
-import React,{useState,useContext,useEffect} from "react";
-import { useNavigate } from "react-router-dom"; 
-import {ProductContext} from "../utils/ProductContextComponents";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  Col,
-  Container,
-  Row,
-} from "react-bootstrap";
+import React,{useState} from "react";
+import { Button,CardImg } from "react-bootstrap";
 
-function Cards({e,i}) {
-  let [toggle,setToggle] = useState(true)
+function Cards({e}) {  
   
-  let navigate = useNavigate()
-  let [count,setCount]=useState(0)
- 
-  let [newPrice,setNewPrice]=useState(e.price)
+  let [count,setCount]=useState(1)
   
   let [total,setTotal]=useState(e.price)
  
@@ -25,21 +11,15 @@ const countDecrease=()=>
 {
 
        setCount(count-1)
-       setNewPrice(e.price*count)
        setTotal(e.price*count)
-       setToggle(false)
+      
      
 }
   const countIncrease=()=>{
-    alert(count)
+    
     setCount(count+1);
-    setToggle(false)
-    alert(count)
-
-   setNewPrice(e.price*count);
-   alert(newPrice)
-  setTotal(e.price*count)
-  alert(total)
+    setTotal(e.price*count)
+ 
  
    
  

@@ -23,7 +23,7 @@ function Carts() {
       <Container className="h-100 py-5">
         <Row className="justify-content-center align-items-center h-100">
           <Col>
-            <Card className="shopping-cart p-2" style={{ borderRadius: "15px" }}>
+            <Card className="shopping-cart " style={{ borderRadius: "15px" }}>
               <CardBody className="text-black">
                 <h2 className="mb-5 pt-2 text-center fw-bold text-uppercase bg-info rounded ">
                   Shopping cart
