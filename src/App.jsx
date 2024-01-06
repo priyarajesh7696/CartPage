@@ -7,7 +7,7 @@ function App() {
   return <>
     <BrowserRouter>
     <Routes>
-    <Route path='/carts' element={
+    <Route path='' element={
         <ProductContextComponents>
           <Carts/>
         </ProductContextComponents>}>
